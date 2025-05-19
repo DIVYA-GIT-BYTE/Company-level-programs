@@ -1,0 +1,20 @@
+'''s=input()
+vowels="aeiouAEIOU"
+count=0
+for i in s:
+	if i not in vowels:
+		print(i,end="")'''
+
+
+#anothermethod
+s=input()
+cc,vc=0,0
+vowels="aeiouAEIOU"
+for i in s:
+	if i not in vowels:
+		cc+=1
+	else:
+		vc+=1
+print(cc,vc)
+
+

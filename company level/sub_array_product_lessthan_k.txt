@@ -1,0 +1,14 @@
+l=list(map(int,input().split()))
+k=int(input())
+l1=[]
+res=0
+for i in range(len(l)):
+	for j in range(i,len(l)):
+		res=l[i:j+1]
+		l1.append(res)
+for m in l1:
+	prod=1
+	for num in m:
+		prod=prod*num
+	if prod<k:
+		print(m)

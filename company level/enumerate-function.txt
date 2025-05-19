@@ -1,0 +1,5 @@
+l=list(map(int,input().split()))
+for index,value in enumerate(l):
+	index+=1
+	if index%3==0:
+		print(index,"-",value)

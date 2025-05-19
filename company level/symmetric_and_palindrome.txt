@@ -1,0 +1,10 @@
+INPUT : amaama
+OUTPUT:symmetric and palindrome
+
+Symmetric : 
+ means half of the string is equal to the another half of the string like , 
+amaama == ama + ama so . one ama is equal to another ama
+
+s=input()
+if s[0:len(s)//2]==s[len(s)//2:] and s==s[::-1]:
+	print("symmetric and palindrome")

@@ -1,0 +1,28 @@
+Take persons height and weights and find the maximum height and maximum weight
+Sample input: 10 100 20 50 8 200 60 80 10 40
+Sample output: 4 3
+
+l=list(map(int,input().split()))
+h,w=[],[]
+for i in range(1,len(l),2):
+    h.append(l[i])
+for j in range(0,len(l),2):
+    w.append(l[j])
+print(w.index(max(w))+1)
+print(h.index(max(h))+1)
+
+
+
+ANOTHER WAY:
+
+
+l=list(map(int,input().split()))
+l,w=[],[]
+i,j=0,1
+for k in range(0,len(l),2):
+    h.append(l[i])
+    w.append(l[j])
+    i+=2
+    j+=2
+print(h.index(max(h)+1)
+print(w.index(max(w)+1)

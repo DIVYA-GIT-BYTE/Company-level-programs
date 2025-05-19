@@ -1,0 +1,28 @@
+INPUT:rhdt:246,ghtfd:1246
+OUTPUT: trhd
+tfdgh
+
+INPUT: abcd:33,good:555,zoo:32
+OUTPUT: dabc
+odgo
+ozo
+
+
+def sumofsq(num_com):
+	sum_square=0
+	for i in num_com:
+		sum_square+=int(i)*int(i)
+	return sum_square
+s=input()
+l=s.split(",")
+l1=[]
+for i in l:
+	l1=i.split(":")
+	word_com=l1[0]
+	num_com=l1[1]
+	res=sumofsq(num_com)
+	if res%2==0:
+		result=word_com[-1]+word_com[0:-1]
+	else:
+		result=word_com[2:]+word_com[0:2]
+	print(result)

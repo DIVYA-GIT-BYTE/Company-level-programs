@@ -1,0 +1,15 @@
+abcuhuvmnba
+auua
+it is a vowel palindrome
+
+Take the all the vowels from string and add that vowels to a string , and check that vowels string is palindrome or not
+
+s=input().lower()
+vowels="aeiou"
+res=""
+for i in s:
+	if i in vowels:
+		res+=i
+print(res)
+if res==res[::-1]:
+	print("it is a vowel palindrome")

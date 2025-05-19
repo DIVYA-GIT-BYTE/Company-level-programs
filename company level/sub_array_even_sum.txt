@@ -1,0 +1,10 @@
+l=list(map(int,input().split()))
+l1=[]
+res=0
+for i in range(len(l)):
+	for j in range(i,len(l)):
+		res=l[i:j+1]
+		if sum(res)%2==0:
+			l1.append(res)
+for k in l1:
+	print(k)

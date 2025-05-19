@@ -1,0 +1,27 @@
+INPUT:
+3
+apple
+arrange
+able
+OUTPUT:
+YES
+
+
+n=int(input())
+s=""
+for i in range(0,n):
+	res=input("Enter a string:")
+	s=s+res+" "
+notfound=0
+l=s.split()
+first_char=l[0][0].lower()
+last_char=l[0][-1].lower()
+for i in l:
+	i=i.lower()
+	if i[0]!=first_char or i[-1]!=last_char:
+		notfound=1
+		break
+if notfound==0:
+	print("yes")
+else:
+	print("no")

@@ -1,0 +1,44 @@
+PROGRAMS ON LISTS:
+
+1.  Program to print each of frequency find out without build in functions
+2.  Program to print distinct(only 1) element of the list 
+3.  Program to display non repeated element in a list
+4.  Program to display repeated element in a list
+5.  Program to count non-repeated element from list
+6.  Program to count  repeated element from list
+7.  Program to print maximum occurrence element 
+8.  Program to print the maximum element and minimum element
+9.  Program to print the remove the duplicate elements
+10. Program to print the sum of elements in a list
+11. Program to print minimum occurrence element 
+12. Program to print the minimum element
+13. Program to display all the repeated in ascending order
+14. Program to display all the repeated in descending order
+15. Program to display all non-repeated in ascending order
+16. Program to display all non-repeated in descending order
+17. Program to display all the elements count greater than 1
+18. Program to display all the minimum occurrence elements
+19. Program to display the count of that occur minimum frequency in a list
+20. Program to display the count of that occur maximum frequency elements in a list
+21. Program to display highest element of maximum occurred element
+22. Program to display lowest element of minimum occurred element
+23. Program to display all the maximum elements in ascending order
+24. Program to display all the maximum elements in descending order
+25. Program to display all the minimum elements in ascending order
+26. Program to display all the minimum elements in descending 
+27. Program to display all the sum of maximum occurred elements
+28. Program to display all the sum of minimum occurred elements
+29. Program to display all the maximum elements in reverse order and minimum elements in reverse order
+30. Program to display the absolute difference between first and last element in maximum occurred element
+31. Program to display the absolute difference between first and last element in minimum occurred elements
+
+
+Input: 5 3 1 7 5 1 3 5 7 4 5 9 10 1 10 1 20 30 
+Output:
+[5,1] [4,9,20,30]
+count of maximum =2
+count of minimum=4
+Highest element with highest=5
+minimu  occurred element=4
+
+

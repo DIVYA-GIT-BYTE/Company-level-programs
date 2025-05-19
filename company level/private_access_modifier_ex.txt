@@ -1,0 +1,7 @@
+class account:
+	def __init__(self):
+		self.__balance=100000
+	def display(self):
+		print(self.__balance)
+a=account()
+a.display()

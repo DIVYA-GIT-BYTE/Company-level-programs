@@ -1,0 +1,32 @@
+INPUT: 3 2 1 4
+OUTPUT: 8
+
+Explanation:
+==============
+3 2 1 4
+1 2 3 4
+ shifting elements count means
+1 shifted to 2 1*2=2
+2 shifted to 0   0
+3 shifted to 2 3*2=6
+4 shifted 0 so, 0
+total sum=8
+so output is 8
+
+'''l=list(map(int,input().split()))
+l1=sorted(l)
+res,sum=0,0
+for i in l1:
+	res=abs((l1.index(i))-(l.index(i)))
+	if res==0:
+		continue
+	res*=i
+	sum+=res
+print(sum)'''
+
+s=input().split()
+string_list=sorted(s)
+res=0
+for i in string_list:
+	res+=abs(int((string_list.index(i)))-int((s.index(i))))*int(i)
+print(res)

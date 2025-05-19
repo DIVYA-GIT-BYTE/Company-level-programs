@@ -1,0 +1,15 @@
+def afternoon_wishes(wishes):
+	def noon():
+		if t>=12:
+			print("Good afternoon")
+		else:
+			wishes()
+	return noon
+@afternoon_wishes
+def wishes():
+	if t<12:
+		print("Good morning")
+		
+t=int(input("Enter time in 24hr format:"))
+wishes()
+		

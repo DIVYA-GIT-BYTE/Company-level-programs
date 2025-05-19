@@ -1,0 +1,92 @@
+'''occurance of each element in a list'''
+l = list(map(int, input().split()))
+for i in range(0,len(l)):
+    if l[i]=="*":
+        continue
+    count=1
+    for j in range(i+1,len(l)):
+        if l[i]==l[j]:
+            count+=1
+            l[j]="*"
+    print(l[i],"-",count)
+'''Method 2
+occurance of each element in a list'''
+l1 = list(map(int, input().split()))
+l2 = []
+for i in l1:
+    if i in l2:
+        continue
+    l2.append(i)
+    count=0
+    for j in range(0,len(l1)):
+        if i==l1[j]:
+            count+=1
+    print(i,count)
+'''Method 3
+occurance of each element in a list'''
+l1 = list(map(int, input().split()))
+l2 = []
+for i in l1:
+    if i not in l2:
+        l2.append(i)
+
+for i in l2:
+    print(i,l1.count(i))
+'''max and min in a list'''
+l = list(map(int, input().split()))
+min,max=l[0],l[0]
+for i in range(0,len(l)):
+    if(l[i]>max):
+        max=l[i]
+    if(l[i]<min):
+        min=l[i]
+print(max,min)
+
+'''max occurance of a list'''
+l1 = list(map(int, input().split()))
+l2=[]
+for i in l1:
+    if i not in l2:
+        l2.append(i)
+max=0
+for i in l2:
+    pre_ele=l1.count(i)
+    if pre_ele>max:
+        max=pre_ele
+
+
+print(max)
+'''min occurance of a list'''
+l1 = list(map(int, input().split()))
+l2=[]
+for i in l1:
+    if i not in l2:
+        l2.append(i)
+min=999999
+for i in l2:
+    pre_ele=l1.count(i)
+    if pre_ele<min:
+        min=pre_ele
+
+
+print(min)
+'''min and max  occurance element/ value  of a list'''
+l1 = list(map(int, input().split()))
+l2=[]
+for i in l1:
+    if i not in l2:
+        l2.append(i)
+min=999999
+max=-1
+for i in l2:
+    pre_ele=l1.count(i)
+    if pre_ele<min:
+        min_ele = i
+        min=pre_ele
+
+    if pre_ele > max:
+        max_ele = i
+        max=pre_ele
+
+
+print(min_ele,max_ele,min,max)

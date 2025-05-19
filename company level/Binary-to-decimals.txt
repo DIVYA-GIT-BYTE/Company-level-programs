@@ -1,0 +1,26 @@
+BINARY TO DECIMAL:
+===================
+
+s=input()
+sum=0
+dv=1
+for i in range(len(s)-1,-1,-1):
+    if s[i]=='1':
+        sum+=dv
+    dv*=2
+print(sum)
+
+
+ANOTHER METHOD:
+===============
+
+n=int(input())
+sum=0
+dv=1
+while n!=0:
+    rem=n%10
+    if rem==1:
+        sum+=dv
+    dv=dv*2
+    n//=10
+print(sum)

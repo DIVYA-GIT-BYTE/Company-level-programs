@@ -1,0 +1,9 @@
+'''s=input()
+count=1
+for i in s:
+	if i.isspace():
+		count+=1
+print(count)'''
+s=input()
+l=s.split()
+print(len(l))

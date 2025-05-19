@@ -1,0 +1,35 @@
+Explanation:
+=============
+     1 2 1 0
+    1 represents count of 0's
+    2 represents count of 1's
+    1 represents count of 2's
+    0 represents count of 3's
+in above 0's count = 1
+         1's count=  2
+         2's count = 1
+         3's count = 0
+and print the distinct characters/numbers count from the given number
+
+Program code:
+================
+
+n=input()
+d=0
+length=0
+for i in n:
+	if str(n.count(str(d)))==i:
+		length+=1
+	d+=1
+if length==len(n):
+	res=""
+	for i in n:
+		if i not in res:
+			res+=i
+	print(len(res))
+	print("Autobiographical number")
+else:
+	print("0")
+	print("not an Autobiographical number") 
+
+	

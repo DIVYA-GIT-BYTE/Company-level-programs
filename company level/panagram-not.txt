@@ -1,0 +1,13 @@
+s=input().lower()
+alpha="abcdefghijklmnopqrstuvwxyz"
+flag=0
+if len(s)<26:
+	print("no")
+else:
+	for i in alpha:
+		if i not in s:
+			print("not")
+			flag=1
+			break
+	else:
+		print("panagram")

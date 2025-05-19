@@ -1,0 +1,14 @@
+Connection pooling / Job pooling / Memory pooling
+==================================================
+
+It can be defined as , if the modified value is already available in the memory , simply that shares the that reference to the variable , if not existed then that only create a new object with new reference
+this is known as connection pooling or memory pooling or job pooling.
+We have this pooling in both java and python
+
+For clear understanding:
+a=10
+print(id(a)) #88
+a=a+2        #12
+print(id(a)) #20
+a=a-2        #10
+print(id(a)) #88

@@ -1,0 +1,65 @@
+ARMSTRONG OR NOT :
+====================
+n=int(input())
+l=len(str(n))
+sum=0
+for i in str(n):
+    sum=sum+int(i)**l
+if sum==n:
+    print("yes")
+else:
+    print("no")
+
+ANOTHER WAY:
+=================
+
+n=int(input())
+sum_d=0
+l=len(str(n))
+sum_d=sum(int(i)**l for i in str(n))
+if sum_d==n:
+    print(f"{n} is a Armstrong")
+else:
+    print(f"{n} is not a Armstrong")
+
+ARMSTRONG IN BETWEEN RANGE:
+==============================
+
+def armstrong(n):
+    sum_d=0
+    l=len(str(n))
+    sum_d=sum(int(i)**l for i in str(n))
+    if sum_d==n:
+        return 1
+    return 0
+n=int(input())
+count=0
+for i in range(1,n):
+    if armstrong(i)==1:
+        print(i,end=" ")
+        count+=1
+print(" ")
+print(f" count is : {count}")
+
+
+ARMSTRONG NUMBERS IN BETWEEN RANGE AND THEIR SUM AND THEIR COUNT:
+====================================================================
+
+def armstrong(n):
+    sum_d=0
+    l=len(str(n))
+    sum_d=sum(int(i)**l for i in str(n))
+    if sum_d==n:
+        return 1
+    return 0
+n=int(input())
+count=0
+summ=0
+for i in range(1,n+1):
+    if armstrong(i)==1:
+        summ+=i
+        print(i,end=" ")
+        count+=1
+print(" ")
+print(f"count is : {count}")
+print(summ)
